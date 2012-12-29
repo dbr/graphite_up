@@ -4,9 +4,10 @@
 require 'rubygems'
 
 Vagrant::Config.run do |config|
-  config.vm.box = "graphite"
+  config.vm.box = "lucid32"
+  config.vm.box_url = "http://files.vagrantup.com/lucid32.box"
   config.vm.host_name = "graphite"
-  config.vm.box_url = 'http://mathie-vagrant-boxes.s3.amazonaws.com/debian_squeeze_32.box' 
+
   config.vm.forward_port(80, 8080)
   config.vm.forward_port(9292, 9999)
   config.vm.forward_port(2003, 2003)
