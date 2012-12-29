@@ -1,3 +1,6 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
 require 'rubygems'
 
 Vagrant::Config.run do |config|
